@@ -1,0 +1,262 @@
+:root {
+
+    --font-family-main: 'Roboto', sans-serif;
+    --font-family-second: 'Open sans', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+}
+main{
+    margin: 0 2.6rem 0 2.6rem;
+}
+body {
+    font-size: 16px;
+    margin: 0;
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-medium);
+}
+
+header{
+    display: block;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+
+span{
+    font-size: 2.18rem;
+    padding: 1rem;
+    height: 4rem;
+    width: 4rem;
+    background-image: none;
+    margin: 0 auto 0 0;
+}
+
+.article-title{
+    font-family: Roboto;
+    display: inline;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 1.25rem;
+    margin: 0 1.25rem 0 0;
+    line-height: 1.2;
+}
+
+.article-content{
+    margin: 1rem 0.12rem 0 0;
+    font-family: "Open sans", sans-serif;
+}
+.last{
+    margin: 1.25rem auto 3.75rem;
+    grid-area: lastArea;
+    font-family: "Open sans", sans-serif;
+}
+.title{    
+    font-size: 3rem;
+    padding: 3.75rem 0 0 0;
+    margin: 0;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.sub-title{
+    font-family: "Open sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 1.25rem auto 0;
+    display: block;
+    max-width: 21.25rem;
+}
+
+.container{
+    display: grid;
+    width: 38rem;
+    min-height: 31.87rem;
+    grid-template-areas:
+    '. myArea'
+    '. myArea'    
+    '. myArea'
+    'lastArea lastArea';
+    grid-gap: 0.62rem;
+    margin: 2.8rem 0 0 0;
+}
+
+img{
+    width: 30.4rem;
+    height: 40.5rem;
+    grid-area: myArea;
+}
+
+.article {
+    display: flex;
+    padding: 1.8rem 1.8rem 0;
+    position: relative;
+    text-align: left;
+}
+
+footer, footer * {
+    background: var(--color-gray-200);
+    color: var(--color-gray-1000);
+}
+
+footer>.footer-text,
+footer>.footer-caption {
+    max-width: 25rem;
+    margin: auto;
+    padding: 3em 2em;
+    text-align: center;
+}
+
+footer>.footer-text {
+    font-size: 0.875rem;
+}
+
+footer>.footer-caption {
+    font-size: 0.8rem;
+}
+@media (max-width: 2199px) {
+    body {
+        min-height: 54.25rem;
+    }
+.sub-title {
+    max-width: 57rem;
+}
+.container{
+    width: 41.6rem;
+    min-height: 34rem;
+    grid-template-columns: 100%;
+    margin: 5% 5% 0 5%;
+    height: auto;
+}
+.article-title {
+    width: auto;
+    margin-right: 0;
+}
+img {
+    width: 28.187rem;
+    height: 34rem;
+}
+}
+/* Responsive */
+/* Large desktop */
+@media (max-width: 1199px) {
+    body {
+        min-height: 54.25rem;
+    }
+.sub-title {
+    max-width: 53rem;
+}
+.container{
+    width: 27.125rem;
+    min-height: 34rem;
+    grid-template-columns: 100%;
+    margin: 5% 5% 0 0;
+    height: auto;
+}
+.article-title {
+    width: auto;
+    margin-right: 0;
+}
+img {
+    width: 28.187rem;
+    height: 34rem;
+}
+}
+@media (max-width: 991px) {
+  body {
+    min-height: 89.5rem;
+  }
+  .container{
+    min-height: 27.75rem;
+    width: 45rem;
+    grid-template-areas:
+    '.'
+    '.'    
+    '.'
+    'myArea'
+    'lastArea';
+    margin: auto;
+  }
+  .article {
+    padding-bottom: 0;
+  }
+    
+  img{
+    width: 43.75rem;
+    height: 40.31rem;
+    margin: auto;
+    padding: 0;
+  }
+  .u-section-2 .u-text-9 {
+    margin-top: 1.43rem;
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .article {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+      
+  }
+    .sub-title {
+    max-width: 33rem;
+    }
+  .container{
+    width: 33.75rem;
+    min-height: 18.75rem;
+    grid-template-columns: 100%;
+    margin: auto;
+    height: auto;
+    }
+  .u-section-2 .u-text-9 {
+    margin-left: auto;
+  }
+    img{
+        height: 40.5rem;
+    width: 33.75rem;
+        margin-top: 1rem;
+    }
+}
+@media (max-width: 575px) {
+  body {
+    min-height: 45.87rem;
+  }
+    .title{
+         font-size: 1.5rem;
+    }
+    main{
+        margin: 0;
+    }
+    .sub-title {
+    max-width: 21.25rem;
+    }
+    .container{
+    width: 21.25rem;
+    min-height: 15.9rem;
+    grid-template-columns: 100%;
+    margin: auto;
+    height: auto;
+    }
+  .article-title {
+    margin-top: 7.5rem;
+    margin-left: -1.56rem;
+    margin-left: 0;
+  }
+  .article-content {
+    margin-right: auto;
+    margin-left: 0;
+  }
+    .article {
+    display: flex;
+    padding: 1.8rem 0 0;
+    position: relative;
+    text-align: left;
+}
+  img {
+    height: 340px;
+    width: auto;
+      margin: auto;
+    }
+  }

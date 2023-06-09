@@ -1,0 +1,15 @@
+.modal-header {
+  background-color: #512DA8;
+  color: #ddd; }
+
+.modal-body {
+  background-color: #D1C4E9; }
+
+.button-close {
+  color: #ddd;
+  background-color: #512DA8;
+  font-size: large;
+  border: none; }
+
+.button-close:hover {
+  color: #fff6f6; }

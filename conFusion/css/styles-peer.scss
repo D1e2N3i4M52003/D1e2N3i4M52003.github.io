@@ -1,0 +1,26 @@
+$lt-gray: #ddd;
+$lt-btn: rgb(255, 246, 246);
+$background-dark: #512DA8;
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+
+
+.modal-header {
+    background-color: $background-dark;
+    color: $lt-gray;
+}
+
+.modal-body {
+    background-color: $background-pale;
+}
+
+.button-close {
+    color: $lt-gray;
+    background-color: $background-dark;
+    font-size: large;
+    border: none;
+}
+
+.button-close:hover {
+    color: $lt-btn;
+}
